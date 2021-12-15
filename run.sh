@@ -1,0 +1,1 @@
+python3 main.py --optimizer lars --max-lr 2.3
