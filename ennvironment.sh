@@ -2,7 +2,7 @@ docker pull nvcr.io/nvidia/pytorch:21.11-py3
 
 echo runing docker container ${USER}_cifar
 
-docker run -dit -p 80:80 -shm-size 40G -v CIFAR10-ResNet50-PyTorch:/workspace/code --gpus all --name ${USER}_cifar nvcr.io/nvidia/pytorch:21.11-py3
+docker run -dit -p 80:80 --shm-size 40G -v CIFAR10-ResNet50-PyTorch:/workspace/code --gpus all --name ${USER}_cifar nvcr.io/nvidia/pytorch:21.11-py3
 
 docker exec -it ${USER}_cifar /bin/bash
 
