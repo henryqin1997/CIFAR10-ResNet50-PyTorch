@@ -3,3 +3,6 @@
 
 
 See run.sh for command to run the code
+
+Some alternative config:
+batchsize 256, max-lr 5.62
